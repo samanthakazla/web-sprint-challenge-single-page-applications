@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import axios from "axios";
 import * as yup from "yup";
 import schema from '../validation/Schema';
+import './Form.css';
 
 const initialValues = {
     name: '',
@@ -84,7 +85,7 @@ export  const Form = () => {
     }
     
     return (
-        <div>
+        <div className = 'box'>
             <form onSubmit={onSubmit}>
 
             <div>
@@ -92,7 +93,7 @@ export  const Form = () => {
                 <div>{formErrors.pizzaSize}</div>
             </div>
 
-            <div>
+            <div className = 'info'>
                 <label>
                 Name:
                 <input 
@@ -104,19 +105,19 @@ export  const Form = () => {
             </label>
             </div>
             
-            <div>
+            <div className = 'dropdown'>
             <label>
                 Pizza Size:
                 <select id='size' onChange={onChange} value={form.pizzaSize} name='pizzaSize'>
                     <option value=''>Select a size</option>
                     <option value='large'>Large</option>
-                    <option value='medium'>medium</option>
-                    <option value='small'>small</option>
+                    <option value='medium'>Medium</option>
+                    <option value='small'>Small</option>
                 </select>
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
             Sausage
                 <input
@@ -128,7 +129,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
             Bacon
                 <input
@@ -140,7 +141,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
                 Ham
                 <input
@@ -152,7 +153,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
                 Cheese
                 <input
@@ -164,7 +165,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
                 Olives
                 <input
@@ -176,7 +177,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
                 Mushrooms
                 <input
@@ -188,7 +189,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'checkbox'>
             <label>
                 Bellpepper
                 <input
@@ -200,7 +201,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <div>
+            <div className = 'info'>
             <label>
                 Special Instructions:
                 <input 
@@ -212,7 +213,7 @@ export  const Form = () => {
             </label>
             </div>
 
-            <button id='submit-btn' disabled={disabled}>Order</button>
+            <button id='submit-btn' disabled={disabled}>Click To Order</button>
             </form>
 
             <div>

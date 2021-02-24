@@ -1,0 +1,67 @@
+
+
+.box {
+   background-color: rgb(207, 75, 75); 
+   padding-top: 30px;
+   padding-bottom: 30px;
+   width: 60%;
+   border:darkblue;
+   border-style: dotted;
+   border-radius: 30px;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 60px;
+   opacity: 0.90;
+   
+}
+
+.box:hover{
+   opacity: 1.0;
+}
+
+.info{
+color: white;
+margin-bottom: 20px;
+margin-top: 10px;
+font-size: 20px;
+}
+
+.dropdown {
+   color: white;
+   font-size: 20px;
+   margin-bottom: 10px;
+
+}
+
+.checkbox {
+   color: white;
+   font-size: 20px;
+   margin-bottom: 10px;
+
+}
+
+button, #submit-btn {
+background-color: rgb(27, 27, 172);
+color: cornsilk;
+margin-bottom: 20px;
+margin-top: 20px;
+border: white;
+border-style: groove;
+border-radius: 5px;
+width: 70%;
+font-size: 20px;
+}
+
+:link{
+      font-size: 30px;
+      background-color:white;
+      border-radius: 10px;
+      color: tomato;
+      padding: 10px;
+      display: block;
+      margin: 0 auto;
+      margin-block-end: 15px;
+      margin-block-start: 10px;
+
+   }
